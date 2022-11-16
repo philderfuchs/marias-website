@@ -1,11 +1,90 @@
 <html>
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            position: relative;
+        }
 
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .header {
+            height: 80vh;
+            background: linear-gradient(0, #FFD667, #FFEEBF);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .header .wave {
+            position: absolute;
+            bottom: -5px;
+
+            width: 100%;
+            height: 80px;
+        }
+
+        .avatar {
+            width: 300px;
+        }
+
+        .greeting {
+            margin-left: 50px;
+            width: 500px;
+
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        nav {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            z-index: 2;
+
+        }
+        nav a {
+            margin: 0 20px;
+            display: inline-block;
+            padding: 5px 20px;
+
+        }
+        nav a:hover {
+            background: black;
+            color: white;
+            border-radius: 7px;
+        }
+    </style>
 </head>
 
 <body>
-<h1>huhu i bims die seite :)</h1>
+    <nav>
+        <a href="#">Lebenslauf</a>
+        <a href="#">Skills</a>
+        <a href="#">Über mich</a>
+    </nav>
+    <div class="header">
+        <div class="avatar">
+            <img src="./img/avatar.svg" />
+        </div>
+        <div class="greeting">
+            Hey, I'm Maria. I'm great.
+        </div>
+        <img class="wave" src="./img/wave.svg"/>
+    </div>
 </body>
 
 </html>
